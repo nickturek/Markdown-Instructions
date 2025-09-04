@@ -40,14 +40,25 @@ Make sure you are ethical when capturing network traffic. Listed below are basic
 ## 2. Discover your network interfaces
 - Run the following command:
     - ip link
-- The terminal output should similar to the image below:
+- The terminal output should show something similar to the following:
+    - **Note:** The names of your interfaces will likely vary from the image below
 
 ![expected output: "list of network interfaces and their appropriate details"](assets/ip_link_output.png)
 
 
 ## 3. Choose the correct network interface name
-- If you are running linux directly on your computer, choose "wlan0"
-- If you are running linux on top of a different operating system, choose "eth0"
+
+- Depending on how you are connected to the internet, choose the appropriate interface name:
+    - **NOTE:** Naming conventions may vary - you may have to try multiple interfaces for this step
+    - Common names for a wifi connection:
+        - wlan0
+        - wlp2s0
+    - Common names for ethernet connection:
+        - eth0
+        - enp3s0
+
+
+
     
 
 ## 4. Capture packets
